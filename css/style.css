@@ -402,6 +402,6 @@ a {
           background-color : navy;
         }
         
-#certification-section{
-  padding :0;
+div#certification-section.container-fuid.card{
+  padding-top:0%;
 }
