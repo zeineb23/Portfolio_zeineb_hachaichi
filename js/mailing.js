@@ -1,22 +1,21 @@
-const first=document.getElementById("first");
-const last=document.getElementById("last");
-const email=document.getElementById("email");
-const state=document.getElementById("state");
-const city=document.getElementById("city");
-const zip=document.getElementById("zip");
-const project=document.getElementById("project");
-const submit=document.getElementsByClassName("form-contact")[0];
+const submit = document.getElementsByClassName("form-contact")[0];
 
-console.log("OUI")
-submit.addEventListener('click',(e)=>{
-    console.log("clicked");
+submit.addEventListener('submit', (e) => {
     Email.send({
-        SecureToken : "19b6852e-1339-4b27-96cd-8a60d655b8b8",
-        To : "zeineb.hachaichi2306@gmail.com",
-        From : "zeineb.hachaichi2306@gmail.com",
-        Subject : "New project",
-        Body : "And this is the body"
+        SecureToken: "7fcaf761-1227-4b46-b498-70361a8407bc",
+        To: "zeineb.hachaichi2306@gmail.com",
+        From: "zeineb.hachaichi2306@gmail.com",
+        Subject: "New project",
+        Body: `
+            First Name: ${first.value}\n
+            Last Name: ${last.value}\n
+            Email: ${email.value}\n
+            State: ${state.value}\n
+            City: ${city.value}\n
+            Zip: ${zip.value}\n
+            Project: ${project.value}\n
+        `
     }).then(
       message => alert(message)
-    );
-})
+  );
+});
