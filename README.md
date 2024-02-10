@@ -28,7 +28,4 @@ To view my portfolio, simply open the `index.html` file in your web browser. Or 
 
 I appreciate any contributions, whether they involve adding features, or improving the overall design and user experience.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
